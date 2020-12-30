@@ -1,0 +1,7 @@
+---
+node: Low-latency Gaming VFIO
+desc: "Passing through all needed devices - GPU, Intel audio controller, Intel ethernet controller, & USB 3 controller - works on elementary OS 5 only! Other distros get Iommu group errors. I tried solving with ACS override patch."
+tested: elementary OS 5, Xubuntu 20.10, Debian 10
+works: elementary OS 5
+fails: Xubuntu 20.10, Debian 10
+error: Iommu group for "Intel audio controller" not valid
