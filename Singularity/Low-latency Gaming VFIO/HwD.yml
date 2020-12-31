@@ -8,7 +8,7 @@ works: elementary OS 5
 fails: Xubuntu 20.10, Debian 10
 error: Iommu group for "Intel audio controller" not valid
 Solution:
-- Works to passthrough all other devices on that bus, Group 9 (Tested: { series: Skylake, Chipset: H110M })
+- default: It Works to passthrough all other devices on that bus, They seem to be nonessential? But this is not ideal as the Host should control them. (Tested: { iommu group: 9, cpu series: Skylake, Chipset: H110M })
 - Hardware: Just buy a USB audio interface
 - Software: use JACK audio
 - Software: use Scream network audio
