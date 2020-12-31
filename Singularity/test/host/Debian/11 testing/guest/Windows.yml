@@ -1,0 +1,11 @@
+status: Works!
+note: requires i440FX Chipset
+problem: With Q35 Chipset, Nvidia will NOT Work!
+
+test:
+- kernel: Linux node0 5.9.0-5-amd64 #1 SMP Debian 5.9.15-1 (2020-12-17) x86_64 GNU/Linux
+- qemu: version 5.1.0 (Debian 1:5.1+dfsg-4+b2)
+- libvirtd: (libvirt) 6.9.0
+- guest: Windows, build 19041.vb_release.191206-1406
+- gpu: EVGA GTX 1060 3GB
+- nvidia-driver: 460.89
